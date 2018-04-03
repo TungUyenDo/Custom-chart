@@ -1,0 +1,31 @@
+#chart-circle {
+    .highcharts-point {
+        stroke-width: 5px;
+    }
+    .highcharts-background {
+        fill: #dddd;
+    }
+}
+
+#chart-pareto {
+    .highcharts-axis-labels {
+        display: none !important
+    }
+    .highcharts-legend-item {
+        display: none !important;
+    }
+    .highcharts-axis-title {
+        display: none !important;
+    }
+}
+
+#chart-3d-pie {
+    .highcharts-pie-series .highcharts-point{
+        stroke:transparent !important
+    }
+}
+#chart-3d-pie--percent {
+    .highcharts-pie-series .highcharts-point{
+        stroke:transparent !important
+    }
+}

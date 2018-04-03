@@ -1,0 +1,31 @@
+{
+  "name": "chart",
+  "version": "1.0.0",
+  "description": "chart",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "dependencies": {
+    "node-sass": "^4.8.3",
+    "nodemon": "^1.17.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css":"node-sass --include-path scss styles/main.scss   styles/main.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TungUyenDo/Custom-chart.git"
+  },
+  "keywords": [
+    "chart"
+  ],
+  "author": "uyendo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TungUyenDo/Custom-chart/issues"
+  },
+  "homepage": "https://github.com/TungUyenDo/Custom-chart#readme"
+}
