@@ -199,6 +199,178 @@ Highcharts.chart('chart-3d-pie-percent', {
             ['Safari', 8.5],
             ['Opera', 6.2],
             ['Others', 0.7]
-        ]
-    }]
+        ],
+         showInLegend: true,
+
+         
+    }],
+    legend: {
+        align: 'right',
+        verticalAlign: 'top',
+        layout: 'vertical',
+        x: -50,
+        y: 120,
+       itemStyle: {
+        fontWeight: 'normal',
+        fontSize: '18px',
+        padding: '20px',
+      }
+    }
 });
+
+//chart col 3d
+Highcharts.chart('chart-3d-column', {
+        chart: {
+            type: 'column',
+            margin: 75,
+            options3d: {
+				enabled: true,
+                // alpha: 15,
+                beta: 15,
+                // depth: 50
+            }
+        },
+        xAxis: {
+            categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
+        },
+        plotOptions: {
+            column: {
+                depth: 25
+            }
+        },
+        series: [{
+            data: [
+                ['Firefox', 45.0],
+                ['IE', 26.8],
+               
+                ['Safari', 8.5],
+                ['Opera', 6.2],
+                ['Others', 0.7]
+            ]
+        }]
+    });
+
+//chart line
+
+Highcharts.chart('chart-line', {
+    chart:{
+        title:{
+            text:''
+        }
+    },
+    xAxis: {
+        title: {
+            text: 'Number of Employees',
+        },
+        categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
+    },
+    yAxis: {
+        title: {
+            text: '',
+        }
+    },
+    legend: {
+        align: 'right',
+        verticalAlign: 'top',
+        layout: 'vertical',
+        x: 0,
+        y: 50,
+       itemStyle: {
+        fontWeight: 'normal',
+        fontSize: '12px',
+      }
+    },
+
+    plotOptions: {
+        series: {
+            label: {
+                connectorAllowed: false
+            },
+            // pointStart: 2010
+        }
+    },
+
+    series: [{
+        name: 'Installation',
+        data: [43934, 52503, 57177, 69658, 97031, 119931, 137133, 154175]
+    }, {
+        name: 'Manufacturing',
+        data: [24916, 24064, 29742, 29851, 32490, 30282, 38121, 40434]
+    }, {
+        name: 'Sales & Distribution',
+        data: [11744, 17722, 16005, 19771, 20185, 24377, 32147, 39387]
+    }, {
+        name: 'Project Development',
+        data: [null, null, 7988, 12169, 15112, 22452, 34400, 34227]
+    }, {
+        name: 'Other',
+        data: [12908, 5948, 8105, 11248, 8989, 11816, 18274, 18111]
+    }],
+
+    responsive: {
+        rules: [{
+            condition: {
+                maxWidth: 500
+            },
+            chartOptions: {
+                legend: {
+                    layout: 'horizontal',
+                    align: 'center',
+                    verticalAlign: 'bottom'
+                }
+            }
+        }]
+    }
+
+});
+
+//chart chopper 
+Highcharts.chart('chart-chopper', {
+    chart: {
+        type: 'column',
+        margin: 75,
+        options3d: {
+            enabled: true,
+            alpha: 1,
+            beta: 10,
+            depth: 90
+        }
+    },
+    xAxis: {
+        title: {
+            text: '',
+        },
+        categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
+    },
+    yAxis: {
+        title: {
+            text: '',
+        },
+    },
+    plotOptions: {
+        column: {
+            depth: 40,
+            stacking: true,
+            grouping: false,
+            groupZPadding: 10
+        }
+    },
+    series: [{
+        data: [1, 2, 4, 3, 2, 4],
+        stack: 0
+    }, {
+        data: [5, 6, 3, 4, 1, 2],
+        stack: 0
+    }],
+    legend: {
+        align: 'right',
+        verticalAlign: 'top',
+        layout: 'vertical',
+        x: 0,
+        y: 50,
+       itemStyle: {
+        fontWeight: 'normal',
+        fontSize: '12px',
+      }
+    },
+})
