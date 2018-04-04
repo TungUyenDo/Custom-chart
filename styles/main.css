@@ -4,9 +4,6 @@
 #chart-circle .highcharts-point {
   stroke-width: 5px; }
 
-#chart-circle .highcharts-background {
-  fill: #dddd; }
-
 #chart-pareto .highcharts-axis-labels {
   display: none !important; }
 
@@ -19,26 +16,8 @@
 #chart-3d-pie .highcharts-pie-series .highcharts-point {
   stroke: transparent !important; }
 
-#chart-3d-pie .highcharts-background {
-  fill: teal; }
-
-#chart-3d-pie .highcharts-root text {
-  fill: #fff !important; }
-
 #chart-3d-pie-percent .highcharts-pie-series .highcharts-point {
   stroke: transparent !important; }
-
-#chart-3d-pie-percent .highcharts-background {
-  fill: teal; }
-
-#chart-3d-pie-percent .highcharts-root text {
-  fill: #fff !important; }
-
-#chart-line .highcharts-background {
-  fill: teal; }
-
-#chart-line .highcharts-root text {
-  fill: #fff !important; }
 
 #chart-line .highcharts-grid-line {
   fill: grey;
@@ -46,9 +25,3 @@
 
 #chart-line .highcharts-plot-background {
   fill: #fff; }
-
-#chart-3d-column .highcharts-background {
-  fill: teal; }
-
-#chart-3d-column .highcharts-root text {
-  fill: #fff !important; }

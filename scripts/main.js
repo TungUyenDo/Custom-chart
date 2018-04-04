@@ -170,7 +170,8 @@ Highcharts.chart('chart-3d-pie-percent', {
         text: 'Browser market shares at a specific website, 2014'
     },
     tooltip: {
-        pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+        pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>',
+        backgroundColor: '#000',
     },
     plotOptions: {
         pie: {
@@ -232,6 +233,11 @@ Highcharts.chart('chart-3d-column', {
         },
         xAxis: {
             categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
+        },
+        yAxis: {
+            title: {
+                text: '',
+            }
         },
         plotOptions: {
             column: {
